@@ -1,0 +1,273 @@
+* {
+    box-sizing:border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    text-align: justify;
+    height: 100vh;
+    line-height: 1.6;
+    display:grid;
+    grid-template-areas: 
+    "nav header header"
+    "nav content sidebar"
+    "footer footer footer";
+    grid-template-columns: 1fr 6fr 1fr;
+    grid-template-rows: 70px 1fr 70px;
+}
+h1, h2, h3 {
+    text-align: center;
+    margin-top: 15px;
+}
+p.a {
+    margin-top: 10px;
+}
+
+header,
+main,
+footer,
+aside,
+nav {
+    color: #333;
+    background-color: #e8d1b9;
+    padding: 10px;
+}
+
+img.logo {
+    border-radius: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    max-width: 55px;
+   
+}
+
+header {
+    grid-area: header;
+    background-image: url(/images/shutterstock_616615280\ -lower\ part.gif);
+    color: #ffb190;
+
+}
+main { 
+    grid-area: content;
+}
+aside {
+    grid-area: sidebar;
+    padding: 20px;
+line-height: 100px;
+opacity: 0.85;
+    border: 1px solid;
+    border-color: beige;
+    text-align: center;
+}
+footer {
+    grid-area: footer;
+    border: 1px solid;
+    border-color: beige;
+}
+
+nav {
+    grid-area: nav;
+}
+
+.navbar {
+    display: block;
+    background: #ffb190;
+    color: #4e3620;
+    font-weight: bolder;
+    font-size: large;
+    height: auto;
+    line-height: 200%;
+}
+
+.navbar a {
+    color: #4e3620;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: medium;
+    
+}
+.navbar a:hover {
+    color: #815949;
+}
+.navbar .container {
+    display: block;
+    align-items: center;
+ }
+    .navbar ul { 
+  display: flex;
+}
+.navbar ul li {
+    margin-left: 20px;
+}
+.navbar .navimages {
+
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid;
+ font-size: small;
+ font-weight: bold;
+}
+.navbar .box {
+padding-top:   10px;
+
+}
+.navcaption {
+    font-weight: light;
+line-height: 20px;
+margin-bottom: 10px;
+max-width: 110px;
+border-radius: 5%;
+}
+.figure-text {
+    display:block;
+padding: 100px;
+    margin: 5px;
+    border: 1px solid;
+    border-color: burlywood;
+    font-size: x-small;
+    font-weight: bolder;
+    font-style: italic;
+}
+img.imageSidebar {
+    max-height: 120px;
+    max-width: 120px;
+border-radius: 20%;
+opacity: 1;
+transition: 0.3s;
+}
+.imageSidebar:hover {
+    opacity: 0.7;
+
+}
+.maintext {
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+}
+.text-citation {
+    font-size: smaller;
+    margin: 10px;
+    padding: 5px;
+    border-color: beige;
+    border: 1px dotted;
+}
+.video-gallery {
+    margin-top: 10px;;
+    border-top: #333 1px dotted;
+    padding-top: 10px;
+}
+.container-chapter {
+    max-width: 960px;
+    margin: 10px 10px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+}
+.chapter {
+    background: #ffb190;
+    color:#333;
+    border-radius: 6%;
+    border: #4e3620 3px solid;
+    font-size: 14px;
+    height: 210px;
+    padding: none;
+   
+}
+.imagechapter {
+max-width: 100%;
+    height: 160px;
+border-radius: 5%;
+box-shadow: 0 3px 5px rgba(0, 0, 0, 0.6);
+padding: none;
+}
+.videocaption {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+text-align: center;
+    padding-bottom: 10px;
+}
+
+details  {
+    padding: 2px;
+    width: 150px;
+    cursor: pointer;
+    border: none;
+    box-shadow: 1px 1px 2px;
+  }
+.footer > p {
+    font-size: smaller;
+    text-align: end;
+}
+
+@media(max-width: 768px) {
+
+    .container-chapter {
+        max-width: 768px;
+        margin: 5px 5px;
+        padding: 10px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 20px;
+    }
+aside {
+    padding: 0px;
+}
+ .boxes {
+    display: none;
+ }
+
+ .videocaption {
+font-size: 12px;
+text-align: center;
+ 
+}
+    
+}
+
+@media(max-width: 600px) {
+    body {
+        font-family:Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        line-height: 1.5;
+        height: 70vh;
+        display:block;
+       
+    }
+   
+    .header {
+        padding: 1%;
+
+    }
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1%;
+}
+    .navbar ol {
+        width: 300px;
+        display: flex;
+        justify-content: space-between;   
+        }
+        .navbar .navimages {
+            display: none;
+        }
+    h1 {
+        font-size: larger;
+    }
+    h2 {
+        font-size: large;
+
+    }
+    h3 {
+        font-size: small;
+    }
+}
+.figure-text {
+    padding: 3px;
+    margin-top: 5px;
+    margin-left: 10px;
+}

@@ -1,0 +1,361 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins&display=swap); 
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #333;
+    background-color: #e8d1b9;
+}
+ 
+h1, 
+h2 {
+margin-bottom: 15px;
+padding: 10px;
+text-align: center;
+}
+h3 { 
+  margin: 10px;
+  text-align: none;
+  padding: 10px;
+}
+h4 { 
+    margin: 3px;
+    text-align: none;
+    padding: 5px;
+  }
+
+p {
+    padding: 10px;
+}
+ul {
+    list-style-type: none;
+}
+
+.container {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+.navbar {
+    background: #4e3620;
+    color: #ffb190;
+    height: 60px;
+
+
+}
+img.logo {
+    border-radius: 20%;
+    height: 55px;
+    padding-top: 5px;
+}
+.navbar a {
+    color: #ffb190;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+.navbar a:hover {
+    color: #815949;
+}
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+    .navbar ul { 
+        display: flex;
+}
+.navbar ul li {
+    margin-left: 20px;
+}
+
+.header {
+    background-image: url("/images/shutterstock_616615280\ -lower\ part.gif");
+    background-size:cover;
+    background-color: #9b6b58;
+    background-repeat: no-repeat;
+    color:#ffb190;
+    min-height: 400px;
+ padding-top: 30px;
+}
+
+.header h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 1.2;
+}
+.header a {
+    color: #ffb190;
+    text-decoration: none;
+    font-size: small;
+    font-style: italic;
+
+}
+.header a:hover {
+    color: #815949;
+}
+.header a:visited {
+    color: #ffb190;
+}
+
+.header img {
+   
+    max-width: 400px;
+    border-radius: 80%;
+
+}
+
+.contactpage h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 60px;
+    font-stretch: extra-expanded;
+    font-weight: bolder;
+    line-height: 20px;
+    padding-top: 100px;
+    margin: 30px;
+}
+.privacy, .disclaimer {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    line-height: 30px;
+    padding: 20px;
+    margin: 20px;
+}
+.imagePr {
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+}
+.imagePr img {
+    border-radius: 80%;
+    max-width: 450px;
+  
+
+}
+  
+img.imagebox {
+    width: 100%;
+    height: 300px;
+border-radius: 10px 10px 0px 0px;
+opacity: 1;
+transition: 0.3s;
+}
+.imagebox:hover {
+    opacity: 0.7;
+
+}
+.Aboutintro {
+    display: block;
+padding: 10px;
+margin: 10px;
+}
+.header .container {
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+.boxes .container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+.boxes .container-contact {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.content {
+    display: none;
+    transition: 0.5s linear;
+}
+
+label{
+    display: inline-block;
+    margin-top: 15px;
+    color: #010100;
+    text-decoration: underline;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.boxes a:link {
+  font-weight: bolder;
+}
+
+.boxes a:visited {
+  color: black;
+  font-weight: bolder;
+}
+
+
+.box { 
+    flex: 1;
+    background: #ce8f75;
+    color: black;
+    border-radius: 10px;
+    margin: 30px 10px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.6);
+    padding: none;
+
+    }
+.box figcaption {
+    font-size: x-small;
+    text-align: center;
+    font-style: italic;
+}
+   
+.box i {
+    margin-right: 10px;
+}
+
+#check {
+    display: none;
+}
+#check:checked ~ .content{
+    display: block;
+}
+#check:checked ~ label{
+    visibility: hidden;
+}
+#check:checked ~ label:after {
+    content: "Show less";
+    display: block;
+    visibility: visible;
+}
+
+#check2 {
+    display: none;
+}
+#check2:checked ~ .content{
+    display: block;
+}
+#check2:checked ~ label{
+    visibility: hidden;
+}
+#check2:checked ~ label:after {
+    content: "Show less";
+    display: block;
+    visibility: visible;
+}
+
+#check3 {
+    display: none;
+}
+#check3:checked ~ .content{
+    display: block;
+}
+#check3:checked ~ label{
+    visibility: hidden;
+}
+#check3:checked ~ label:after {
+    content: "Show less";
+    display: block;
+    visibility: visible;
+}
+#check4 {
+    display: none;
+}
+#check4:checked ~ .content{
+    display: block;
+}
+#check4:checked ~ label{
+    visibility: hidden;
+}
+#check4:checked ~ label:after {
+    content: "Show less";
+    display: block;
+    visibility: visible;
+}
+@media(max-width: 992px) {
+.boxes .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+
+}
+.privacypage h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-stretch: extra-expanded;
+    font-weight: bolder;
+    line-height: 100px;
+    padding-top: 170px;
+    margin: 70px;
+}
+}
+@media(max-width: 768px) 
+{ .privacypage h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-stretch: extra-expanded;
+    font-weight: bolder;
+    line-height: 100px;
+    padding-top: 170px;
+    margin: 70px;
+}
+
+    .boxes .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+.boxes .container-contact {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    text-align: center;
+}
+.imagePr img {
+    max-width: 350px;
+
+}
+}
+@media(max-width: 600px) {
+    
+    .privacypage h1 {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-stretch: extra-expanded;
+        font-weight: bolder;
+        margin: 70px;
+    }
+
+    .header .container {
+        flex-direction: column;
+        padding-top: 10px;
+text-align: center;
+
+    }
+    .box figcaption {
+        font-size: smaller;
+        text-align: center;
+        font-style: italic;
+    }
+      h1 {
+        font-size: medium;
+      }
+      .navbar {
+        width: 450px;
+    }
+.header {
+    padding-top: 40px;
+}
+img.imagebox {
+    width: 100%;
+    height: 300px;
+
+}
+.box { 
+    min-height: auto;
+}
+    .boxes .container {
+        display: block;
+        text-align: center;
+    }
+   
+   
+}
